@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <title>Frontend Mentor | Product preview card component
-    </title>
-</head>
-<body>
-    <div class="Container">
-        <div class="table">
-            <div class="img">
-            <img src="./image-product-desktop.jpg" alt="Pro-Img" class="pro-Img">
-            </div>
-            <div class="textcontent">
-            <h5>PERFUME</h5>
-            <h1>Gabrielle Essence Eau De Parfum</h1>
-            <p> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-                Perfumer-Creator for the House of CHANEL.</p>
-            <h4>$149.99<span><del>$169.99</del></span></h4>
-            <button class="btn"><img src="./icon-cart.svg" class="icon">Add To Cart</button>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="card">
+        <img
+          src="./image-product-desktop.jpg" alt="product-image" class="product-image"
+        />
+        <div class="card-content">
+          <h6 class="product-category">Perfume</h6>
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p class="product-details">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="price">
+            <span class="new-price">$149.99</span
+            ><span class="old-price">$169.99</span>
+          </p>
+          <button>
+            <img src="images/icon-cart.svg" alt="" />
+            Add to Cart
+          </button>
         </div>
-        <footer>
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Guhapriyan Thiyagamooethi</a>.
-        </footer>
-    </div>
-    
-     
-</body>
+      </div>
+      <footer>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Guhapriyan Thiyagamooethi</a>.
+      </footer>
+    </main>
+  </body>
 </html>

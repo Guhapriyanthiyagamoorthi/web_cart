@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,126 +8,112 @@
 }
 
 body {
-  background-color: hsl(30deg, 38%, 92%);
-  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  font-size: 14px;
 }
 
-.Container {
+.container {
   margin: 30px auto;
 }
 
-.table {
-  max-width: 500px;
+.card {
+  max-width: 600px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #fff;
-  border-radius: 15px;
   overflow: hidden;
+  margin: 20px;
 }
 
-.pro-Img {
-  max-width: 100%;
+.product-image {
+  width: 100%;
   display: inherit;
 }
 
-.textcontent {
-  padding: 30px 15px 30px 15px;
+.card-content {
+  padding: 35px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-h5 {
-  font-family: Montserrat;
-  color: hsl(228deg, 12%, 48%);
-  font-weight: 100;
+p,
+h6 {
+  color: hsl(228, 12%, 48%);
+}
+
+.product-category {
+  text-transform: uppercase;
   letter-spacing: 5px;
+  font-size: 0.75rem;
+  font-weight: 100;
 }
 
 h1 {
-  font-family: Fraunces;
-  padding-right: 10px;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  padding: 20px 0;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
-p {
-  color: hsl(228deg, 12%, 48%);
-  font-family: Montserrat;
-  font-size: 11px;
-  padding-right: 27px;
-  font-weight: lighter;
-  line-height: 18px;
+.product-details {
+  line-height: 1.5rem;
 }
 
-h4 {
-  position: relative;
-  font-family: Fraunces;
-  color: hsl(158deg, 36%, 37%);
-  font-size: 25px;
+.price {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
 }
-h4 span {
-  position: absolute;
-  top: 11px;
-  left: 115px;
-  font-size: 10px;
-  font-family: Montserrat;
-  color: hsl(228deg, 12%, 48%);
-  font-weight: 100;
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+  margin-right: 15px;
+}
+
+.old-price {
+  text-decoration: line-through;
 }
 
 button {
-  background-color: hsl(158deg, 36%, 37%);
-  border-radius: 5px;
+  background-color: hsl(158, 36%, 37%);
+  padding: 15px;
   border: none;
-  width: 100%;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer{
+  margin: 10px 10px 0 35px;
 }
 
-.btn {
-  position: relative;
-  font-weight: bold;
-  padding: 6px;
-  color: #fff;
-  transition: background-color 0.5s ease-in-out;
-}
-.btn .icon {
-  position: absolute;
-  left: 35px;
+button img {
+  margin-right: 10px;
 }
 
 button:hover {
-  background-color: hsl(158deg, 36%, 27%);
+  background-color: hsl(158, 50%, 20%);
+  cursor: pointer;
 }
 
-@media screen and (max-width: 435px) {
-  .table {
+@media screen and (max-width: 630px) {
+  .card {
     grid-template-columns: 1fr;
   }
-  .Container {
-    padding: 0 30px;
-  }
-  .pro-Img {
-    width: 100%;
-    max-height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    background-position: center;
-  }
-  .textcontent {
-    display: block;
-  }
-  h5, h1, p, h4 {
-    padding-bottom: 15px;
+
+  .product-image {
+    content: url(./image-product-mobile.jpg);
   }
 }
-@media screen and (max-width: 375px) {
-  .pro-Img {
-    max-height: 250px;
-    background-position: center;
-  }
-}
-footer {
-  margin: 10px 10px 0 35px;
-}/*# sourceMappingURL=Style.css.map */
